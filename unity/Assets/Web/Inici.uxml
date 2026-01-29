@@ -1,0 +1,21 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(198, 255, 206); padding: 20px;">
+        <ui:Label text="Activitat 1 - Encriptació" style="font-size: 24px; -unity-font-style: bold; margin-bottom: 20px; -unity-text-align: middle-center;" />
+        <ui:ScrollView>
+            <ui:VisualElement style="background-color: rgba(255, 255, 255, 0.5); padding: 15px; border-radius: 10px; margin-bottom: 20px;" />
+            <ui:Label text="Bloc Encriptació" style="font-size: 18px; -unity-font-style: bold; margin-bottom: 10px;" />
+            <ui:TextField name="input-text" label="Text a encriptar" placeholder-text="Escriu missatge..." />
+            <ui:Button name="btn-encrypt" text="Encrypt (POST /encrypt)" style="margin-top: 5px; height: 30px;" />
+            <ui:TextField name="output-encrypted" label="Encrypted Result" readonly="true" style="margin-top: 10px;" />
+            <ui:Button name="btn-decrypt" text="Decrypt (POST /decrypt)" style="margin-top: 5px; height: 30px;" />
+            <ui:Label name="lbl-decrypted-result" text="Aquí sortirà el text original..." style="margin-top: 5px; color: rgb(50, 50, 50);" />
+            <ui:VisualElement style="background-color: rgba(255, 255, 255, 0.5); padding: 15px; border-radius: 10px;" />
+            <ui:Label text="Bloc Hash" style="font-size: 18px; -unity-font-style: bold; margin-bottom: 10px;" />
+            <ui:TextField name="input-password" label="Password" password="true" placeholder-text="Introdueix password..." />
+            <ui:Button name="btn-hash" text="Generate Hash (POST /hash)" style="margin-top: 5px; height: 30px;" />
+            <ui:TextField name="output-hash" label="Hash Generat" readonly="true" style="margin-top: 10px;" />
+            <ui:Button name="btn-verify" text="Verify (POST /verify)" style="margin-top: 5px; height: 30px;" />
+            <ui:Label name="lbl-verify-result" text="Estat: Esperant..." style="margin-top: 5px; -unity-font-style: bold;" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>
