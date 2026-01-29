@@ -1,0 +1,15 @@
+# Node.js
+backend/node_modules/
+npm-debug.log
+
+# Unity
+unity/Library/
+unity/Temp/
+unity/Obj/
+unity/Build/
+unity/Builds/
+unity/UserSettings/
+
+# OS
+.DS_Store
+Thumbs.db
