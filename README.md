@@ -44,7 +44,7 @@ Assegura't de tenir **Node.js** instal·lat.
 
 ---
 
-## 📡 Documentació de l'API
+## Documentació de l'API
 
 El servidor escolta al port **3000** i accepta peticions `POST` amb format JSON.
 
